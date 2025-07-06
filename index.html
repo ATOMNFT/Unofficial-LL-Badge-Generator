@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <img src="Images/logo.png" alt="Lazy Lions Logo" class="top-logo" />
+  <title>Lazy Lions Badge Generator</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="/Icons/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="content-wrapper">
+  <h1>Lazy Lions Badge Generator</h1>
+  <input type="text" id="walletInput" placeholder="Enter wallet address" />
+  <button onclick="fetchLions()">View Lazy Lions</button>
+  <div id="output" class="grid"></div>
+
+  <h2>Select Badge Style</h2>
+  <div id="badgeOptions">
+    <label><input type="radio" name="badge" value="Images/LZB1.png" checked><img src="Images/LZB1-preview.png" class="badge-thumb"></label>
+    <label><input type="radio" name="badge" value="Images/LZB2.png"><img src="Images/LZB2-preview.png" class="badge-thumb"></label>
+    <label><input type="radio" name="badge" value="Images/LZB3.png"><img src="Images/LZB3-preview.png" class="badge-thumb"></label>
+    <label><input type="radio" name="badge" value="Images/LZB4.png"><img src="Images/LZB4-preview.png" class="badge-thumb"></label>
+  </div>
+
+  <button id="generateBtn">Generate Badge</button>
+  <div class="canvas-container">
+    <canvas id="badgeCanvas" width="300" height="300"></canvas>
+  </div>
+  <button id="downloadBtn">Download Badge</button>
+  <audio id="flipSound" src="/Sounds/Lion-Roar.wav" preload="auto"></audio>
+  <script src="app.js"></script>
+ </div>
+ 
+  <!-- ✅ Footer -->
+  <footer style="text-align: center; margin-top: 2rem; padding: 1rem; font-size: 0.9rem; opacity: 0.7;">
+    <p>No wallet connection required. Your assets stay private and fully protected.</p>
+    <p>Made with ❤️ by <a href="https://github.com/ATOMNFT" target="_blank" rel="noopener noreferrer" style="color: #00bcd4;">ATOMNFT</a></p>
+  </footer>
+ 
+</body>
+</html>
