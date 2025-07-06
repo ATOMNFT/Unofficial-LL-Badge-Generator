@@ -35,7 +35,7 @@ button {
   background: linear-gradient(45deg, #e53935, #ffb300);
   border: none;
   border-radius: 8px;
-  cursor: url('/Icons/lion.cur'), pointer;
+  cursor: url('Icons/lion.cur'), pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -57,7 +57,7 @@ button:hover {
   max-width: 120px;
   height: auto;
   border-radius: 10px;
-  cursor: url('/Icons/lion.cur'), pointer;
+  cursor: url('Icons/lion.cur'), pointer;
   transition: 0.2s;
   border: 2px solid transparent;
 }
@@ -110,7 +110,7 @@ canvas.flipping {
   margin: 5px;
   border-radius: 8px;
   border: 2px solid transparent;
-  cursor: url('/Icons/lion.cur'), pointer;
+  cursor: url('Icons/lion.cur'), pointer;
   transition: transform 0.2s, border 0.2s;
 }
 
