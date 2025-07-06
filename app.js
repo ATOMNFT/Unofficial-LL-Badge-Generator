@@ -6,7 +6,7 @@ let selectedImage = null;
 let nftImage = new Image();
 const canvas = document.getElementById('badgeCanvas');
 const ctx = canvas.getContext('2d');
-const flipSound = new Audio("https://github.com/ATOMNFT/Unofficial-LL-Badge-Generator/blob/main/Sounds/Lion-Roar.wav");
+const flipSound = new Audio("Sounds/Lion-Roar.wav");
 
 const dailySayings = {
   0: "Roar into Sunday with pride!",
